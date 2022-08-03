@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+html,
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.titulo-secao{
+    background-color: #EEEEEE;
+    border-top: solid 1px crimson;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.container-flex{
+    display: flex;
+}
+section p{
+    line-height: 1.8;
+}
+.container-arejado{
+    padding: 2rem;
+}
+.letter-spacing{
+    letter-spacing: 6px;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+#container-titulo{
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+}
+.data{
+    font-style: italic;
+    color: rgb(75, 74, 74);
+}
+.nome-profissao{
+    color: crimson;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#container-nome{
+    height: 230px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-arejado .margem-inferior{ 
+    margin-bottom: 2rem;
+}
+.profissao-primeira{
+    font-size: 1.5rem;
+}
+.foto-paty{
+    height: 500px;
+    overflow: hidden;
+    align-items: center;
+}
+.foto-paty img{
+    width: 100%;
+}
+#container-titulo img{
+    margin-right: 10px;
+    height: 50px;
+}
+
+#container-img-endereco{
+    background-color: rgb(70, 1, 1);
+}
+#container-img-instagram{
+    background-color: rgb(165, 2, 2);
+}
+#container-img-email{
+    background-color: rgb(224, 0, 0);
+}
+#link-telefone{
+    background-color: rgb(248, 80, 80);
+}
+#link-instagram{
+    background-color: rgb(221, 51, 51);
+}
+#link-email{
+    background-color: rgb(255, 36, 36);
+}
+.linha{
+    display: flex;
+    transition: all ease-in-out .3s;
+}
+.linha:hover{
+    transform: scale(1.025);
+}
+.linha a{
+    color: white;
+    padding-left: 1rem;
+    line-height: 4rem;
+    text-decoration: none;
+    flex: 12;
+}
+.container-img{
+    box-shadow: inset 0 0 5px 3px rgba(65, 63, 63, 0.507);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 959px){
+    header{
+        align-items:flex-start;
+        display: grid;
+        grid-template: "container-titulo container-nome foto-perfil";
+        grid-template-columns: auto auto 30vw;
+        height: 180px; 
+    }
+
+    #container-titulo{
+        grid-area: container-titulo;
+        height: auto;
+        padding-top: 2rem;
+    }
+
+    #foto-perfil{
+        background-attachment: fixed;
+        background-size: 50%;
+        background-position: left top;
+        box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.2);
+        grid-area: auto;
+        min-height: 60vh;        
+        position: fixed;
+        right: 0;
+        width: 30vw;
+    }
+
+    #foto-perfil img{
+        min-width: 500px;
+    }
+
+    #container-nome{
+        align-items: flex-end;
+        grid-area: container-nome;
+        height: auto;
+        padding-top: 2rem;
+        padding-right: 2rem;   
+    }
+
+    #container-info{
+        width: 70vw;
+    }
+    
+    #container-experiencias{
+        width: 70vw;
+        height: 0;
+    }
+
+    footer{
+        bottom: 0;
+        box-shadow: 0px 20px 10px 10px rgba(0,0,0,0.2);
+        display: flex;
+        flex-direction: column;    
+        height: 40vh;   
+        position: fixed;        
+        width: 30vw;  
+        right: 0; 
+    }
+
+    footer .linha{
+        flex: 1;
+    }
+    .foto-paty{
+        border-radius: 10%;
+    }
+    
+    body{
+        margin: auto;
+    }
+}
+
+
+
